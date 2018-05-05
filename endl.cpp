@@ -3,5 +3,3 @@
 using namespace std {
 ostream& winendl(ostream& os);
 }
-
-  
