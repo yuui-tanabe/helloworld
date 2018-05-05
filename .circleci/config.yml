@@ -2,5 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-      image: archlinux/base
-      
+      - image: archlinux/base
+  steps:
+    - checkout
+      - run:
+          name: Update Keyring
+          command: pacman-key --init
+          command: pacman-key --populate archlinux
+      - run:
+          name: Update System
+          command: pacman -Syu
+      - run:
+          mane: Compile
+          command: make
