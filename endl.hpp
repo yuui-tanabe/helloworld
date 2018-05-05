@@ -1,3 +1,5 @@
+#ifndef LIBENDL_HPP
+#define LIBENDL_HPP
 #include <iostream>
 namespace std
 {
@@ -8,3 +10,4 @@ namespace std
     return os;
   }
 }
+#endif
