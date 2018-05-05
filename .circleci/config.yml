@@ -13,5 +13,8 @@ jobs:
           name: Update System
           command: pacman -Syu
       - run:
-          mane: Compile
+          name: Install Tools
+          command: pacman -Sy make gcc
+      - run:
+          name: Compile
           command: make
