@@ -6,16 +6,16 @@ jobs:
       - image: archlinux/base
   steps:
     - checkout
-      - run:
-          name: Update Keyring
-          command: pacman-key --init
-          command: pacman-key --populate archlinux
-      - run:
-          name: Update System
-          command: pacman -Syu
-      - run:
-          name: Install Tools
-          command: pacman -Sy make gcc
-      - run:
-          name: Compile
-          command: make
+    - run:
+        name: Update Keyring
+        command: pacman-key --init
+        command: pacman-key --populate archlinux
+    - run:
+        name: Update System
+        command: pacman -Syu
+    - run:
+        name: Install Tools
+        command: pacman -Sy make gcc
+    - run:
+        name: Compile
+        command: make
