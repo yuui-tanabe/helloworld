@@ -1,4 +1,4 @@
 $(CC) := gcc
 
 all:
-  $(CC) -o helloworld ./helloworld.cpp
+	$(CC) -o helloworld ./helloworld.cpp
