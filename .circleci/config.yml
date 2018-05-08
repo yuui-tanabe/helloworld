@@ -11,5 +11,5 @@ jobs:
           command: pacman -Sy --noconfirm make gcc cmake
       - run:
           name: Compile
-          command: cmake .
+          command: cmake . -G"Unix Makefiles"
           command: make
