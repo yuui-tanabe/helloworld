@@ -8,7 +8,7 @@ jobs:
       - run:
           name: Install Tools
           command: pacman -Syu --noconfirm
-          command: pacman -Sy --noconfirm make gcc cmake
+          command: pacman -Sy --noconfirm make gcc cmake git openssh
       - run:
           name: Compile
           command: cmake . -G"Unix Makefiles" && make
