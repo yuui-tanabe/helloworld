@@ -4,11 +4,11 @@ jobs:
     docker:
       - image: archlinux/base
     steps:
-      - checkout
       - run:
           name: Install Tools
           command: pacman -Syu --noconfirm
           command: pacman -Sy --noconfirm make gcc cmake git openssh
+      - checkout
       - run:
           name: Compile
           command: cmake . -G"Unix Makefiles" && make
