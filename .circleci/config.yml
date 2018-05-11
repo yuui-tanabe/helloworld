@@ -6,8 +6,7 @@ jobs:
     steps:
       - run:
           name: Install Tools
-          command: pacman -Syu --noconfirm
-          command: pacman -Sy --noconfirm make gcc cmake git openssh
+          command: pacman -Syu --noconfirm --noprogressbar && pacman -Sy --noconfirm --noprogressbar make gcc cmake git openssh
       - checkout
       - run:
           name: Compile
