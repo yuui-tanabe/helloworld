@@ -10,4 +10,5 @@ jobs:
       - checkout
       - run:
           name: Compile
-          command: cmake . -G"Unix Makefiles" && make && mv helloworld $CIRCLE_ARTIFACT
+          command: cmake . -G"Unix Makefiles" && make && mv helloworld $CIRCLE_ARTIFACTS/
+          
