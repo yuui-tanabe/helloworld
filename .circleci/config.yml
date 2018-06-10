@@ -11,15 +11,4 @@ jobs:
       - run:
           name: Compile
           command: cmake . -G"Unix Makefiles" && make
-workflows:
-  version: 2
-  nightly_workflow:
-    triggers:
-      - schedule:
-          cron: "0 1 * * *" # UTCで記述。この場合は朝10時
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build
+
