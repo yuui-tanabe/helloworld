@@ -6,16 +6,11 @@ jobs:
     steps:
       - run:
           name: Install Tools
-          command: 
-          - pacman -Syu --noconfirm --noprogressbar 
-          - pacman -Sy --noconfirm --noprogressbar make gcc cmake git openssh
+          command: pacman -Syu --noconfirm --noprogressbar && pacman -Sy --noconfirm --noprogressbar make gcc cmake git openssh
       - checkout
       - run:
           name: Compile
-          command: 
-            - cmake . -G"Unix Makefiles" 
-            - make 
-            - mv helloworld $CIRCLE_ARTIFACTS/
+          command: cmake . -G"Unix Makefiles" && make
 workflows:
   version: 2
   nightly_workflow:
