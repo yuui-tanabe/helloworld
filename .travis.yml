@@ -2,10 +2,7 @@ language: cpp
 addons:
   sonarcloud:
     organization: "yuui-tanabe-github"
-    projectKey: "yuui-tanabe_helloworld"
-    sources: .
-    
 script:
   - cmake -G"Unix Makefiles" .
   - make
-  - sonar-scanner
+  - sonar-scanner -Dsonar.sources=. -Dsonar.projectKey=yuui-tanabe_helloworld
