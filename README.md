@@ -1,3 +1,3 @@
 # C++ Hello World
 
-[![CircleCI](https://circleci.com/gh/yuui-tanabe/helloworld.svg?style=svg)](https://circleci.com/gh/yuui-tanabe/helloworld)
+[![Build Status](https://travis-ci.com/yuui-tanabe/helloworld.svg?branch=master)](https://travis-ci.com/yuui-tanabe/helloworld)
