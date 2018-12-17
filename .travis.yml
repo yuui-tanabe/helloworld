@@ -1,0 +1,8 @@
+language: cpp
+addons:
+  sonarcloud:
+    organization: "yuui-tanabe-github"
+script:
+  - cmake -G"Unix Makefiles" .
+  - make
+  
