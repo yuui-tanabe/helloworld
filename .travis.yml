@@ -4,6 +4,5 @@ addons:
     organization: "yuui-tanabe-github"
 script:
   - cmake -G"Unix Makefiles" .
-  - make
-  - mkdir bw-output
+  - build-wrapper-linux-x86-64 --out-dir bw_output make clean all
   - sonar-scanner
