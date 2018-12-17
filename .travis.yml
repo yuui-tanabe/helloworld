@@ -6,4 +6,4 @@ script:
   - cmake -G"Unix Makefiles" .
   - make
   - mkdir bw-output
-  - sonar-scanner -Dsonar.sources=. -Dsonar.projectKey=yuui-tanabe_helloworld -Dsonar.cfamily.build-wrapper-output=bw-output
+  - sonar-scanner
