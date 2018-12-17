@@ -5,5 +5,5 @@ addons:
 script:
   - cmake -G"Unix Makefiles" .
   - make
-  - touch bw-output
+  - mkdir bw-output
   - sonar-scanner -Dsonar.sources=. -Dsonar.projectKey=yuui-tanabe_helloworld -Dsonar.cfamily.build-wrapper-output=bw-output
