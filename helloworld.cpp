@@ -4,7 +4,8 @@
 using namespace std;
 int main(void)
 {
-  cout << "Hello World" << endl;
-  cerr << "!!! Hello World !!!" << endl;
+  string a;
+  cin >> a
+  Log().Get(logINFO) << a
   exit(EXIT_SUCCESS);
 }
