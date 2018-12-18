@@ -5,7 +5,7 @@ using namespace std;
 int main(void)
 {
   string a;
-  cin >> a
+  cin >> a;
   Log().Get(logINFO) << a
   exit(EXIT_SUCCESS);
 }
