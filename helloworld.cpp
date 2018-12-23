@@ -1,12 +1,13 @@
 #include <iostream>
 #include <cstdlib>
+#include <spdlog/spdlog.h>
+#include <spdlog/sinks/stdout_color_sinks.h>
 
+using namespace spdlog;
 using namespace std;
-int main(void)
+int main(int, char* [])
 {
-  string a;
-  cin >> a;
-  string LogINFO;
-  Log().Get(logINFO) << a
+  auto console = stdout_color_mt("console");
+  console->info("Hello World");
   exit(EXIT_SUCCESS);
 }
