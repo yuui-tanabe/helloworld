@@ -3,7 +3,6 @@ dist: xenial
 addons:
   sonarcloud:
     organization: "yuui-tanabe-github"
-addons:
   apt:
     packages:
       - libspdlog-dev
