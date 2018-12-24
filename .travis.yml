@@ -7,6 +7,6 @@ addons:
     packages:
       - libspdlog-dev
 script:
-  - cmake -G"Unix Makefiles" -DCMAKE_CXX_FLAGS="-std=c++11".
+  - cmake -G"Unix Makefiles" -DCMAKE_CXX_FLAGS="--std=c++11".
   - build-wrapper-linux-x86-64 --out-dir bw_output make clean all
   - sonar-scanner
